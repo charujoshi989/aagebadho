@@ -1,0 +1,176 @@
+
+#container {
+    width: 1050px;
+/*    border: 1px solid grCey;*/
+    margin: 0 auto;
+    
+}
+#header {
+    height: 100px;
+    padding: 10px 0;
+}
+
+#title {
+    float: left;
+}
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+}
+#searchBox {
+    float: right;
+    background: linear-gradient(30deg,#066e5c 20%,#790723, #1d8e01);
+    width: 450px;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    margin-top: 18px;
+}
+.text1{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #d47ba7;   
+    background: white url(images/search1.png) right center no-repeat;
+}
+
+.submit{
+    float: right;
+    width: 150px;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    background: #d4ea01;
+    font-weight: bold;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+    height: 80px;
+    background: linear-gradient(30deg, #ef437c, #c3a72b);
+    padding: 10px 0;
+}
+ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right: 2px solid;
+}
+#menu ul li:last-child{
+ border-right: none;    
+}
+
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #522c5e;
+    line-height: 30px;
+    -webkit-transition: font-size 0.4s ease;
+    -moz-transition: font-size 0.4s ease;
+    -o-transition: font-size 0.4s ease;
+    -ms-transition: font-size 0.4s ease;
+    transition: font-size 0.4s ease;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f0a26;
+}
+
+.mySlides {
+    display: none;
+    }
+img {
+    vertical-align: middle;
+    }
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1000px;
+  height: 200px;    
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text1 {font-size: 11px}
+}
+
+#introduction{
+    background: linear-gradient(60deg, #fff8f3, #ffff9f 60%);
+    padding: 30px;
+    margin: 19px 0;
+}
+#introduction h3{
+    font-size: 45px;
+    color: darkgreen;
+    font-weight: normal;
+}
+#introduction p{
+    font-size: 20px;
+    color: #0a7762;
+    text-align: justify;
+}

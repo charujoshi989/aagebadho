@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>NGO HomePage</title>
+         <meta name="viewport" content="width=device-width, initial-scale-1.0, user-scalable=yes">
+         <link rel="stylesheet" href="css/styling.css">
+       
+     </head>
+     <body>
+         <div id="container">
+             <div id="header">
+                <div id="title">
+                    <h1><a href="#">!!! AGE BADHO !!!!</a></h1>
+                 </div>
+                 <div id="searchBox">
+                     <form method="get">
+                        <input type="text" class="text1">
+                        <input type="submit" value="Search the Area" class="submit">
+                     </form>
+                 
+                 </div>
+                 <div class="clear">
+                 </div>
+             </div>
+             <div id="menu">
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="register.html" >Work With US</a></li>
+                    <li><a href="gallery1.html" >Gallery</a></li>
+                    <li><a href="visions.html" >Visions</a></li>
+                    <li><a href="aboutus.html" >About Us</a></li>
+                    <li><a href="contactus.html" >Contact Us</a></li>
+                </ul>
+             </div>
+                          
+             <div class="slideshow-container" >
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/abc.jpeg" style="width:100%;height: 200px">
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/2.jpg" style="width:100%;height: 200px">
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/3.jpeg" style="width:100%;height: 200px">
+                  <div class="text">Caption Three</div>
+                </div>
+
+             </div>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+             
+             <div id="introduction">
+                 <h3> What We Are?</h3>
+                 <p> a prefix appearing in loanwords from Greek, most often attached to verbs and verbal derivatives, with the meanings “at or to one side of, beside, side by side” (parabola; paragraph; parallel; paralysis), “beyond, past, by” (paradox; paragogue); by extension from these senses, this prefix came to designate objects or activities auxiliary to or derivative of that denoted by the base word (parody; paronomasia), and hence abnormal or defective (paranoia), a sense now common in modern scientific coinages (parageusia; paralexia). As an English prefix, para-1 may have any of these senses; it is also productive in the naming of occupational roles considered ancillary or subsidiary to roles requiring more training, or of a higher status, on such models as paramedical and paraprofessional: paralegal; paralibrarian; parapolice.</p>
+             </div>
+         </div>
+         
+         <script>
+         var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+         </script>
+     </body>
+</html>
